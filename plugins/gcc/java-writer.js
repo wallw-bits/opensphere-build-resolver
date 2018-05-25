@@ -22,7 +22,7 @@ const genericWriter = function(basePackage, dir, options, file, test) {
         javaArgs.push('--' + key);
 
         if (value[i] !== true) {
-          javaArgs.push(value[i]);
+          javaArgs.push('\'' + value[i] + '\'');
         }
       }
     }
